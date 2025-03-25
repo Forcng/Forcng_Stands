@@ -3,7 +3,7 @@ CreateThread(function()
         RequestModel(shops.PedModel)
         while not HasModelLoaded(shops.PedModel) do Wait(10) end
         
-        local ped = CreatePed(4, shops.PedModel, shops.PedPosition.x, shops.PedPosition.y, shops.PedPosition.z, shops.PedPosition.w, false, true)
+        local ped = CreatePed(0, shops.PedModel, shops.PedPosition.x, shops.PedPosition.y, shops.PedPosition.z, shops.PedPosition.w, false, true)
         FreezeEntityPosition(ped, true)
         SetEntityInvincible(ped, true)
         SetBlockingOfNonTemporaryEvents(ped, true)
